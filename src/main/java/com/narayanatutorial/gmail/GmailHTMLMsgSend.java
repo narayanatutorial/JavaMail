@@ -54,7 +54,7 @@ public class GmailHTMLMsgSend {
 
 			// creating session
 			session = Session.getDefaultInstance(properties, auth);
-
+			System.out.println("Session created successfully");
 			// create mimemessage
 			mimeMessage = new MimeMessage(session);
 			mimeMessage.addRecipient(RecipientType.TO, new InternetAddress(ToAddress));
